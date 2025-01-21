@@ -1,6 +1,5 @@
 @use 'variables' as v;
 @use 'mixins' as m;
-@use 'placeholders';
 @use 'sass:color';
 
 .about-section{
@@ -59,8 +58,8 @@
         &__touch{
             position: relative;
             width: 100%;
-            height: 400px;
-            padding: 0 15px 0 15px;
+            height: 500px;
+            padding: 0 15px 0 0;
             @include m.d-flex(end, end, nowrap, column, 0, 20px);
             
             &::before{
@@ -162,7 +161,7 @@
             }
 
             @media (max-width: v.$media_md){
-                height: 650px;
+                height: 730px;
                 background: url('/assets/img/cactus_alpha.webp') 99% 100% / 320px no-repeat;
 
                 &-title{
